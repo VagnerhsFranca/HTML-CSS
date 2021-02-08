@@ -3,37 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 3b</title>
+    <title>Exemplo3b</title>
 </head>
 <body>
-    <ul>
-        <li><label for="tNome">Nome</label> <input type="text" name="tNome" id="Cnome" placeholder="Nome completo"></li>
-        <li>Sexo</li>
-        <ul type="circle">
-            <li><input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label>
-            </li>
-            <li><input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
-            </li>
-        </ul>
-        <li>Hobbie:</li>
-            <ul type="circle">
-                <li><input type="checkbox" name="tCinema" id="cCinema"><label for="cCinema">Cinema</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="tLiteratura" id="cLiteratura"><label for="cLiteratura">Literatura</label>
-                </li>
-                <li><input type="checkbox" name="tEsporte" id="cEsporte"><label for="cEsporte">Esporte</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="tMusica" id="cMusica"><label for="cMusica">Música</label>
-                </li>
-            </ul>
-        <li>
-            Comentário <!-- <input type="text" name="tComentario" id="cComentario" placeholder="Digite seu comentário..." > -->
+    <form action="">
+        <fieldset>
+            <legend>Iniciar Sessão</legend>
+            <label for="loginC">Login </label> <input type="text" name="loginT" id="loginC">
+        
+            <label for="senhaC">Senha </label> <input type="password" id="senhaC" name="senhaT">
 
-            <textarea name="tComentario" id="cComentario" cols="30" rows="10"></textarea>
-        </li>
-    </ul>
-    
+            Tipo <select name="tipoT" id="tipoC">
+                <option value="">Aluno</option>
+                <option value="">Auxiliar administrativo</option>
+                <option value="">Professor</option>
+            </select>
+            <button type="submit">Submeter</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
 </body>
 </html>
