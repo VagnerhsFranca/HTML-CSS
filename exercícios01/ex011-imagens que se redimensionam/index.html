@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagnes redimensionadas</title>
+</head>
+<body>
+    <picture> 
+        <h1>Imagens dinâmicas</h1>
+        <source media="(min-width: 950px)" srcset="imagens/G.png" type="image/png">
+        <source media="(min-width: 650px)" srcset="imagens/M.png" type="image/png">
+        
+        <img src="imagens/P.png" alt="imgG">
+    </picture>
+
+    <h1>Tocando áudio</h1>
+    <audio preload="metadata" autoplay controls> 
+        <source src="midia/guanacast-33.mp3" type="audio/mp3">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    </audio>  
+</body>
+</html>
