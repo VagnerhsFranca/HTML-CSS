@@ -1,0 +1,36 @@
+table{
+    table-layout: fixed;
+    width: 100%;
+    white-space: nowrap;
+}
+thead tr:first-child{
+    background-color: darkblue;
+    color: white;
+    text-align: left;
+    width: 100%;
+}
+/* CPF */
+th:nth-child(1){
+    width: 10%;
+}
+/* Nome */
+th:nth-child(2){
+    width: 40%;
+}
+/* Salário */
+th:nth-child(3){
+    width: 30%;
+}
+/* Data Nascimento */
+th:nth-child(4){
+    width: 20%;
+}
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+tr:nth-child(even) {
+	background-color: lightblue;
+}
+
+

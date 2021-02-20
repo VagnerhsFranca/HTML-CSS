@@ -1,0 +1,45 @@
+div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+header, article, footer, nav{
+    padding: 20px 10px;
+    margin: 10px;
+}
+header, footer, nav{
+    color: white;
+}
+header{
+    background-color: orange;
+    width: 100%;
+}
+article{
+    background-color: #DDCFAE;
+    box-sizing: border-box;
+    position: relative;
+    width: 440px;   
+}
+nav{
+    background-color: #9DD929;
+    width: 200px; 
+}
+
+footer{
+    background-color:  #45A8DF;
+    width: 100%;
+    
+}
+ul{
+    list-style-type: none;
+    padding: 20px 10px;
+}
+
+li{
+    margin:20px;
+    text-decoration:underline white;
+    border-bottom: 1px solid white;
+}
