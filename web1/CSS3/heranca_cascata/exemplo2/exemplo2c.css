@@ -1,0 +1,22 @@
+table{
+    table-layout: auto;
+    width: 50%;
+    transform: translate(50%, 50%);
+}
+
+
+tr:nth-child(1){
+    background-color: #eca673;
+}
+tr:nth-child(2){
+    background-color: palegoldenrod;
+}
+tr{
+    background-color: powderblue;
+    color: brown;
+    text-align: center;
+}
+tr td:first-child, tr td:last-child{
+    color: rgb(48, 81, 179);
+}
+

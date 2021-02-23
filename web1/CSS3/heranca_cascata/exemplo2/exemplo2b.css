@@ -1,0 +1,41 @@
+table{
+    table-layout: fixed;
+    white-space: nowrap;
+    width: 100%;
+}
+
+tr:first-child th{
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+tr td:first-child{
+    width: 50%;
+    text-align: left;
+    color: black;
+}
+
+tr th{
+    text-align: center;
+    color: white;
+    background-color: rgb(42, 167, 42);
+    padding: 20px;
+}
+tr td{
+    text-align: center;
+    padding: 5px;
+    text-align: center;
+    padding: 5px;
+}
+tr:nth-child(even){
+    background-color: rgb(139, 189, 160);
+}
+tr:nth-child(odd){
+    background-color: rgb(194, 233, 213);
+}
+td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

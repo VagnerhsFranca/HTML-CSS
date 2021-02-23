@@ -1,0 +1,32 @@
+table{
+    width: 100%;
+    border-style: dashed;
+    border-collapse: collapse;
+}
+/* th{
+    color: steelblue;
+    border: dashed 1px black;
+}*/
+tr:first-child{
+    text-align: center;
+}
+td, th, tr{
+ text-align: left;
+ border-bottom: 1px solid gray;
+}
+td:first-child{
+    color: steelblue;
+}
+tr td:first-child{
+    background-color: white;
+    width: 20%;
+}
+tr:nth-child(3) td, tr:nth-child(6) td{
+    background-color: rgb(216, 216, 216);
+}
+
+td, th{
+    background-color: rgb(192, 216, 238);
+}
+
+
