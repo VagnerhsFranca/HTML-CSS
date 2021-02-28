@@ -1,0 +1,19 @@
+table{
+    border: 1px dashed black;
+    width: 600px;
+    height: 600px;
+    margin-left:  50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+table tr.linha2 td:nth-child(even){
+    background-color: black;
+    width: calc(600/8)px;
+    height: calc(600/8)px;
+}
+table tr.linha1 td:nth-child(odd){
+    background-color: black;
+    width: calc(600/8)px;
+    height: calc(600/8)px;
+}
