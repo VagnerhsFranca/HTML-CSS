@@ -1,19 +1,22 @@
 table{
     border: 1px dashed black;
-    width: 600px;
-    height: 600px;
-    margin-left:  50%;
-    margin-top: 50%;
-    transform: translate(-50%,-50%);
+    width: 640px;
+    height: 640px;
+    margin: auto;
     
 }
-table tr.linha2 td:nth-child(even){
-    background-color: black;
-    width: calc(600/8)px;
-    height: calc(600/8)px;
+
+table tr.linha2 td:nth-child(even), tr.linha1 td:nth-child(odd){
+    background-color: black;  
 }
-table tr.linha1 td:nth-child(odd){
-    background-color: black;
-    width: calc(600/8)px;
-    height: calc(600/8)px;
+
+img{
+    width: 80%;
+    vertical-align: middle;
+}
+
+td{
+    width: 12.5%;
+    height: 12.5%;
+    text-align: center;
 }
