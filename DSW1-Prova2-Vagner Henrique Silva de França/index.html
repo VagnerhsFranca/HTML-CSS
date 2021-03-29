@@ -1,0 +1,36 @@
+<!-- Autor: Vagner Henrique Silva de França
+ 29/03/2021 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passeio do cavalo</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script type="text/javascript" src="../DSW1-Prova2-Vagner Henrique Silva de França/index.js"></script>
+</head>
+
+<body>
+    <h1>Passeio do cavalo <img src="cavalo.png" id="cavalo" alt=""></h1>
+    <p id="status"></p>
+
+    <div>
+        Tabela
+        <table id="tabuleiro"></table>
+    </div>
+    
+    <div id="config">
+        <p>
+            Linha <input type="number" id="linhas" value=8 onclick="montaTabuleiro()">
+            Colunas <input type="number" id="colunas" value=8 onclick="montaTabuleiro()">
+        </p>
+         
+
+        <button onclick="atribuirclick()">Restart</button>
+    </div>
+</body>
+
+</html>

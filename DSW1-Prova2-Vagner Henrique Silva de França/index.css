@@ -1,0 +1,29 @@
+/* Autor: Vagner Henrique Silva de França
+29/03/2021 */
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd){
+    background-color: rgb(163, 159, 159);
+  }
+td{
+    width: 65px;
+    height: 65px;
+    border: 3px solid black;
+    text-align: center;
+}
+input[type="number"]{
+    width: 40px;
+}
+div{
+    text-align: center;
+    border: 1.5px solid black;
+    margin: 1.5px;
+}
+body{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+img{
+    margin-left: 0px;
+}
