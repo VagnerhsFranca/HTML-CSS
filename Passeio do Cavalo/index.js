@@ -113,9 +113,8 @@ function play() {
             
             this.innerHTML = '<strong></strong>'; 
             achaDestino();
-            validaJogada();
             this.innerHTML = '';
-            if(jogadaValida){
+            if(validaJogada(lineOrigem, columOrigem, lineDestino, columDestino)){
                 jogadaValida = false;
                 this.innerHTML = origem.outerHTML;
                 jogadas += 1;
@@ -165,34 +164,35 @@ function achaDestino(){
     }
 }
 
-function validaJogada(){
-    if(((columDestino - 1) === columOrigem) && ((lineDestino - 2) === lineOrigem)){
-        jogadaValida = true;
+function validaJogada(lineOrigem, columOrigem, lineDest, columDest){
+    if(((columDest - 1) === columOrigem) && ((lineDest - 2) === lineOrigem)){
+        return true;
     }
-    if(((columDestino + 1) === columOrigem) && ((lineDestino + 2) === lineOrigem)){
-        jogadaValida = true;
+    if(((columDest + 1) === columOrigem) && ((lineDest + 2) === lineOrigem)){
+        return true;
     }
-    if(((columDestino + 1) === columOrigem) && ((lineDestino - 2) === lineOrigem)){
-        jogadaValida = true;
+    if(((columDest + 1) === columOrigem) && ((lineDest - 2) === lineOrigem)){
+        return true;
     }
-	if(((columDestino - 1) === columOrigem) && ((lineDestino + 2) === lineOrigem)){
-        jogadaValida = true;
+	if(((columDest - 1) === columOrigem) && ((lineDest + 2) === lineOrigem)){
+        return true;
     }
-	if(((columDestino - 2) === columOrigem) && ((lineDestino - 1) === lineOrigem)){
-        jogadaValida = true;
+	if(((columDest - 2) === columOrigem) && ((lineDest - 1) === lineOrigem)){
+        return true;
     }
-    if(((columDestino + 2) === columOrigem) && ((lineDestino + 1) === lineOrigem)){
-        jogadaValida = true;
+    if(((columDest + 2) === columOrigem) && ((lineDest + 1) === lineOrigem)){
+        return true;
     }
-    if(((columDestino - 2) === columOrigem) && ((lineDestino - 1) === lineOrigem)){
-        jogadaValida = true;
+    if(((columDest - 2) === columOrigem) && ((lineDest - 1) === lineOrigem)){
+        return true;
     }
-	if(((columDestino + 2) === columOrigem) && ((lineDestino - 1) === lineOrigem)){
-        jogadaValida = true;
+	if(((columDest + 2) === columOrigem) && ((lineDest - 1) === lineOrigem)){
+        return true;
     }
-    if(((columDestino - 2) === columOrigem) && ((lineDestino + 1) === lineOrigem)){
-        jogadaValida = true;
+    if(((columDest - 2) === columOrigem) && ((lineDest + 1) === lineOrigem)){
+        return true;
     }
+    
 }
 
 function bordaVermelha(){
@@ -203,34 +203,9 @@ function bordaVermelha(){
         let row = rows[i];
         for (let j = 0; j < row.cells.length; j++) {
             let cell = row.cells[j];
-            if(((j - 1) === columOrigem) && ((i - 2) === lineOrigem)){
+            if(validaJogada(lineOrigem, columOrigem, i, j)){
                 document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j].style.borderColor = "red";
             }
-            if(((j + 1) === columOrigem) && ((i + 2) === lineOrigem)){
-                document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j].style.borderColor = "red";
-            }
-            if(((j + 1) === columOrigem) && ((i - 2) === lineOrigem)){
-                document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j].style.borderColor = "red";
-            }
-            if(((j - 1) === columOrigem) && ((i + 2) === lineOrigem)){
-                document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j].style.borderColor = "red";
-            }
-            if(((j - 2) === columOrigem) && ((i - 1) === lineOrigem)){
-                document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j].style.borderColor = "red";
-            }
-            if(((j + 2) === columOrigem) && ((i + 1) === lineOrigem)){
-                document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j].style.borderColor = "red";
-            }
-            if(((j - 2) === columOrigem) && ((i - 1) === lineOrigem)){
-                document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j].style.borderColor = "red";
-            }
-            if(((j + 2) === columOrigem) && ((i - 1) === lineOrigem)){
-                document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j].style.borderColor = "red";
-            }
-            if(((j - 2) === columOrigem) && ((i + 1) === lineOrigem)){
-                document.getElementsByTagName('tr')[i].getElementsByTagName('td')[j].style.borderColor = "red";
-            }
-            
         }
     }
 }
