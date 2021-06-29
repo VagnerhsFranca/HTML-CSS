@@ -1,0 +1,31 @@
+#conteiner{
+    border: 1px solid red;
+    width: 90%;
+}
+
+.noticia{
+    border: 1px solid blue;
+    width: 300px;
+    background-color: lightgrey;
+    float: left;
+    /* position: absolute; */
+    margin: 5px;
+}
+
+#clear{
+    clear: both;
+}
+
+.imagem{
+    border: 1px solid green;
+    float: left;
+    /* position: absolute; */
+}
+
+div{
+    margin: 2px;
+}
+
+p{
+    font-size:  10px;
+}
